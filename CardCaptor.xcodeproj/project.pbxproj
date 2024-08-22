@@ -15,6 +15,7 @@
 		8E2728792C75F53D00C5E68E /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2728782C75F53D00C5E68E /* CSButton.swift */; };
 		8E27287F2C7659AF00C5E68E /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E27287E2C7659AF00C5E68E /* CardDetailsViewController.swift */; };
 		8E2728812C76630600C5E68E /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2728802C76630600C5E68E /* CardDeck.swift */; };
+		8EE6FC8D2C7740F400E8846B /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6FC8C2C7740F400E8846B /* Cards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8E2728782C75F53D00C5E68E /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		8E27287E2C7659AF00C5E68E /* CardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
 		8E2728802C76630600C5E68E /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		8EE6FC8C2C7740F400E8846B /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				8E2728762C75EC0B00C5E68E /* CardSelectorViewController.swift */,
 				8E27287E2C7659AF00C5E68E /* CardDetailsViewController.swift */,
 				8E2728802C76630600C5E68E /* CardDeck.swift */,
+				8EE6FC8C2C7740F400E8846B /* Cards.swift */,
 				8E2728782C75F53D00C5E68E /* CSButton.swift */,
 				8E27286B2C75E63E00C5E68E /* Assets.xcassets */,
 				8E27286D2C75E63E00C5E68E /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				8E2728812C76630600C5E68E /* CardDeck.swift in Sources */,
 				8E2728632C75E63D00C5E68E /* AppDelegate.swift in Sources */,
 				8E27287F2C7659AF00C5E68E /* CardDetailsViewController.swift in Sources */,
+				8EE6FC8D2C7740F400E8846B /* Cards.swift in Sources */,
 				8E2728772C75EC0B00C5E68E /* CardSelectorViewController.swift in Sources */,
 				8E2728652C75E63D00C5E68E /* SceneDelegate.swift in Sources */,
 				8E2728792C75F53D00C5E68E /* CSButton.swift in Sources */,

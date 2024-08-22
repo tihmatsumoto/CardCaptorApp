@@ -13,7 +13,8 @@ class CardSelectorViewController: UIViewController {
     let randomCardButton = CSButton(backgroundColor: .systemPink, title: "Go for random card")
     let transformCardButton = CSButton(backgroundColor: .systemPink, title: "Transform card")
     
-    var cards = CardDeck.clowValues
+    var cards = Cards.allValues
+    var currentCardArray: CardDeck = CardDeck(clowCards: UIImage(named: "ClowDark")!, sakuraCards: UIImage(named: "SakuraCardDark")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,7 @@ class CardSelectorViewController: UIViewController {
     
     func configureTransformCardButton() {
         view.addSubview(transformCardButton)
+        transformCardButton.addTarget(self, action: #selector(transformCard), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             transformCardButton.widthAnchor.constraint(equalToConstant: 250),
@@ -67,13 +69,22 @@ class CardSelectorViewController: UIViewController {
     }
     
     @objc func imageTap() {
-        let vc = CardDetailsViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        self.present(CardDetailsViewController(), animated: true)
+        let detailsVC = CardDetailsViewController()
+        detailsVC.imageToDetail = cardImageView.image
+        self.present(detailsVC, animated: true)
     }
     
     @objc func showRandomCard() {
-        cardImageView.image = cards.randomElement()
+        currentCardArray = cards.randomElement()!
+        cardImageView.image = currentCardArray.clowCards
+    }
+    
+    @objc func transformCard() {
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.transitionCrossDissolve]) {
+            self.cardImageView.alpha = 0
+            self.cardImageView.image = self.currentCardArray.sakuraCards
+            self.cardImageView.alpha = 1
+        }
     }
 }
 
